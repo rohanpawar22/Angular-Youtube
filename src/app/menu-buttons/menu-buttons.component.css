@@ -1,0 +1,23 @@
+.menu-title {
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.menu-title-text {
+  color: white;
+  font-family: system-ui;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu-title:hover {
+  background-color: #383838;
+}
+
+.active {
+  background-color: #383838;
+}
+
+.active:hover {
+  background-color: #5c5c5c;
+}
