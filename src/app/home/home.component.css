@@ -1,0 +1,23 @@
+.image-cards {
+  width: 84%;
+  background-color: #181818;
+}
+
+.image-container {
+  height: 268px;
+  width: 396px;
+  background-color: #181818;
+  display: flex;
+  margin: 36px;
+  flex-direction: row;
+}
+
+.mouseOver {
+  margin-right: 20px;
+}
+
+.mouseOver:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
