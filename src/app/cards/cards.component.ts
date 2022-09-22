@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
   constructor() {}
-  @Input() imgLink = '';
-  @Input() imgTitle = '';
+  @Input() card: any;
 
   ngOnInit(): void {}
 }
