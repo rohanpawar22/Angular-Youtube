@@ -37,17 +37,16 @@
   box-shadow: 1px 1px 8px 1px rgb(255, 0, 0);
 }
 
-.searchbar {
+.search-bar {
   margin: 12px auto;
+}
+
+.searchbar {
   background: #121212;
   width: 500px;
   border: none;
   font-size: 16px;
   outline: none;
-}
-
-.searchbar:hover {
-  box-shadow: 1px 1px 8px 1px rgb(255, 0, 0);
 }
 
 .searchbar:focus-within {
@@ -56,32 +55,21 @@
 }
 
 input[type="text"] {
-  height: 33px;
+  height: 34px;
   padding: 0 10px;
   color: white;
-  border-radius: 2px 0 0 2px;
-  z-index: 2;
 }
 
 .searchButton {
-  margin-top: 1px;
   width: 36px;
-  height: 30px;
-  border: 1px solid #121212;
-  background: #202124;
+  height: 34px;
+  background: #383838;
   color: #c4c4c4;
-  border-radius: 0 5px 5px 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
+  outline: none;
+  border: none;
 }
-
-.voice {
-  height: 20px;
-  position: relative;
-  top: 5px;
-  left: 10px;
-}
-
 .main-body {
   display: flex;
   flex-direction: row;

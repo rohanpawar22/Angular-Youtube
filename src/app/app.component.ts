@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CardsComponent } from './cards/cards.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project-youtube';
-
+  sideMenuList: any = [
+    'Home',
+    'Explore',
+    'Shorts',
+    'Originals',
+    'Movies',
+    'Subscriptions',
+  ];
 }

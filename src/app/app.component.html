@@ -10,9 +10,7 @@
       <button type="submit" class="searchButton">
         <i class="fa fa-search"></i>
       </button>
-      <a href="#"> <img class="voice"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
-          title="Search by Voice"></a>
+
     </div>
     <div class="account">
       <img class="photo" src="../assets/IMG_20190303_223556_893.jpg" alt="Photo">
@@ -20,22 +18,12 @@
   </div>
   <div class="main-body">
     <div class="side-menu-bar">
-      <app-menu-buttons [btnName]="'home'"></app-menu-buttons>
-      <app-menu-buttons [btnName]="'Explore'"></app-menu-buttons>
-      <app-menu-buttons [btnName]="'Shorts'"></app-menu-buttons>
-      <app-menu-buttons [btnName]="'Originals'"></app-menu-buttons>
-      <app-menu-buttons [btnName]="'Subscriptions'"></app-menu-buttons>
+      <app-menu-buttons *ngFor="let item of sideMenuList" [btnName]="item"></app-menu-buttons>
     </div>
     <div class="image-cards">
       <div class="image-container">
-        <app-cards class="mouseOver" [imgLink]="'./assets/PicsArt_08-16-09.54.06.jpg'" [imgTitle]="'Beach Biking'">
-        </app-cards>
-        <app-cards class="mouseOver" [imgLink]="'./assets/Picsart_22-08-29_15-08-20-576.jpg'"
-          [imgTitle]="'Scary House'">
-        </app-cards>
-        <app-cards class="mouseOver" [imgLink]="'./assets/Picsart_22-09-08_15-08-30-800.jpg'"
-          [imgTitle]="'BMW Highway Ride'">
-        </app-cards>
+        <router-outlet></router-outlet>
+        <!-- <app-cards *ngFor="let card of videoCards" class="mouseOver" [card]="card">        </app-cards> -->
       </div>
     </div>
   </div>
