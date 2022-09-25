@@ -1,6 +1,12 @@
 .menu-title {
-  padding: 12px 0px;
-  text-align: center;
+  padding: 12px 24px;
+  display: flex;
+}
+
+.icon-container {
+  padding-right: 24px;
+  color: white;
+  padding-top: 8px;
 }
 
 .menu-title-text {
@@ -20,4 +26,12 @@
 
 .active:hover {
   background-color: #5c5c5c;
+}
+
+.openMenue {
+  flex-direction: row;
+}
+
+.closedMenue {
+  flex-direction: column;
 }

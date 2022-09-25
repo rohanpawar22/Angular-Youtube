@@ -11,6 +11,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { OrignalsComponent } from './orignals/orignals.component';
 import { SubscriptionsComponent } from './subscriptions/subscriptions.component';
 import { AppRoutingModule } from './app.routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AppRoutingModule } from './app.routing.module';
     OrignalsComponent,
     SubscriptionsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

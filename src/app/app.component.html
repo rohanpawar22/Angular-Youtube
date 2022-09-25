@@ -2,6 +2,9 @@
 <div class="container">
   <div class="header">
     <div class="YT-logo">
+      <div class="hamburger" (click)="hamClicked()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <img class="logo" src="../assets/youtube-logo-png-46031.png" alt="YT logo">
       <h3 class="title">YouTube</h3>
     </div>
@@ -16,8 +19,9 @@
     </div>
   </div>
   <div class="main-body">
-    <div class="side-menu-bar">
-      <app-menu-buttons *ngFor="let item of sideMenuList" [btnName]="item"></app-menu-buttons>
+    <div class="side-menu-bar" [ngStyle]="{ 'width': isSideMenueOpen ? '14%' : '4%' }">
+      <app-menu-buttons *ngFor="let item of sideMenuList" [btnName]="item" [isSideMenueOpen]="isSideMenueOpen">
+      </app-menu-buttons>
     </div>
     <router-outlet></router-outlet>
     <!-- <div class="image-cards">
