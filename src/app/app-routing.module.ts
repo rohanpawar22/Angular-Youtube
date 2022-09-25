@@ -8,11 +8,11 @@ import { ShortsComponent } from './shorts/shorts.component';
 import { SubscriptionsComponent } from './subscriptions/subscriptions.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   pathMatch: 'full',
-  //   redirectTo: 'home',
-  // },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home',
+  },
   {
     path: 'Home',
     component: HomeComponent,
