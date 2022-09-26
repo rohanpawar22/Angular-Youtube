@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardsComponent } from './cards/cards.component';
 
 @Component({
@@ -16,4 +16,15 @@ export class AppComponent {
     'Movies',
     'Subscriptions',
   ];
+
+  isSideMenuOpen: boolean = true;
+
+  ngOnInit(): void {
+    console.log('init values :', this.isSideMenuOpen);
+  }
+
+  hamClicked() {
+    this.isSideMenuOpen = !this.isSideMenuOpen;
+    console.log('hamburger clicked : ', this.isSideMenuOpen);
+  }
 }

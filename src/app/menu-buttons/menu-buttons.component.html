@@ -1,3 +1,9 @@
-<div [routerLink]="btnName" routerLinkActive="active" class="menu-title">
-    <a class="menu-title-text">{{btnName}}</a>
+<div class="menu-title" [ngClass]="{ 'open-menu': isSideMenuOpen, 'close-menu': !isSideMenuOpen }"
+    [routerLink]="btnName" routerLinkActive="active">
+    <div class="icon-container">
+        <i class="{{getClassNameByMenu()}}"></i>
+    </div>
+    <div class="label-container">
+        <a class="menu-title-text" [ngStyle]="{ 'font-size': isSideMenuOpen ? '20px' : '8px' }">{{btnName}}</a>
+    </div>
 </div>

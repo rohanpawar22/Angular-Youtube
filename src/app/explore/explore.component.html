@@ -1,1 +1,11 @@
-<p>explore works!</p>
+<div class="explore-container">
+    <div class="img-container">
+        <img [src]="imageURL" class="dog-img">
+    </div>
+    <div class="btn-container">
+        <button type="button" class="btn-bow" (click)="onButtonClicked()">
+            <i class="fa fa-dog"></i>
+            <span class="lable">Bow Bow</span>
+        </button>
+    </div>
+</div>

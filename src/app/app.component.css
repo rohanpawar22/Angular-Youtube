@@ -9,6 +9,17 @@
   align-items: center;
 }
 
+.hamburger {
+  color: white;
+  padding: 14px 16px;
+  font-size: 24px;
+}
+
+.hamburger:hover {
+  color: #ff4a4afb;
+  cursor: pointer;
+}
+
 .YT-logo {
   display: flex;
   flex-direction: row;
